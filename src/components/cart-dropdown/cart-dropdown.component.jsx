@@ -8,8 +8,8 @@ import CartItem from "../cart-item/cart-item.component";
 
 import {
   CartDropdownContainer,
-  EmptyMessage,
   CartItems,
+  EmptyMessage,
 } from "./cart-dropdown.styles";
 
 const CartDropdown = () => {

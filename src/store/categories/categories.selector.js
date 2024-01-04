@@ -4,7 +4,7 @@ const selectCategoryReducer = (state) => state.categories;
 
 export const selectCategories = createSelector(
   [selectCategoryReducer],
-  (categoriesSlice) => categoriesSlice.categories
+  (categoriesSlice) => categoriesSlice.categories,
 );
 
 export const selectCategoriesMap = createSelector(
@@ -14,5 +14,5 @@ export const selectCategoriesMap = createSelector(
       const { title, items } = category;
       acc[title.toLowerCase()] = items;
       return acc;
-    }, {})
+    }, {}),
 );

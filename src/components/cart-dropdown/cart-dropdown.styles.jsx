@@ -21,7 +21,7 @@ export const CartDropdownContainer = styled.div`
 
   ${BaseButton},
   ${GoogleSignInButton},
-  ${InvertedButton} {
+    ${InvertedButton} {
     margin-top: auto;
   }
 `;

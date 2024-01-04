@@ -28,9 +28,7 @@ const firebaseConfig = {
   messagingSenderId: "26463231105",
   appId: "1:26463231105:web:cbc7c73616f58e90cac180",
 };
-
-const firebaseApp = initializeApp(firebaseConfig);
-
+initializeApp(firebaseConfig);
 const googleProvider = new GoogleAuthProvider();
 
 googleProvider.setCustomParameters({
@@ -47,7 +45,7 @@ export const db = getFirestore();
 
 export const addCollectionAndDocuments = async (
   collectionKey,
-  objectsToAdd
+  objectsToAdd,
 ) => {
   console.log(objectsToAdd.length);
   const batch = writeBatch(db);
@@ -72,7 +70,7 @@ export const getCategoriesAndDocuments = async () => {
 
 export const createUserDocumentFromAuth = async (
   userAuth,
-  additionalInformation = {}
+  additionalInformation = {},
 ) => {
   if (!userAuth) return;
 
