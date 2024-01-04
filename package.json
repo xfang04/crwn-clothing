@@ -17,6 +17,8 @@
     "redux": "^5.0.1",
     "redux-logger": "^3.0.6",
     "reselect": "^5.0.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2",
     "sass": "^1.63.4",
     "styled-components": "^6.0.2",
     "web-vitals": "^3.5.1"
